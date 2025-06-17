@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./assets/img/testimonial-img.png');
+    background-image: url('../img/testimonial-img.png');
     background-size: cover;
     min-height: 80vh;
    }
