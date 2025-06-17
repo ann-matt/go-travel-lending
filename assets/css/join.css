@@ -15,7 +15,7 @@
    position:relative;
 
    @media (min-width: 766px) {
-    background-image: url('/assets/img/join-img.png');
+    background-image: url('./assets/img/join-img.png');
     background-size: cover;
     min-height: 80dvh;
    }
