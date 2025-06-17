@@ -1,0 +1,110 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(transparent);
+    transition: background-color 0.4s, box-shadow 0.4s;
+    transition: 0.7s;
+    z-index: 999;
+
+
+    
+}
+ .nav__container {
+    max-width: 1220px;
+    margin: 0 auto;
+    
+    padding-inline: 1rem;
+    
+} 
+.bg-header {
+    background-color: white;
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, .1);
+}
+.bg-header :is(.nav__logo, .nav__toggle, .nav__theme, .nav__link) {
+    color: black;
+}
+.bg-header .nav__logo img {
+    filter: invert(100%);
+}
+
+.nav {
+    position:relative;
+    height: var(--header-height);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.nav__logo {
+    display: flex;
+    align-items:center;
+    column-gap: 0.25rem;
+    color: var(--white-color);
+    font-family: 'Montserrat';
+    font-weight: var(--font-semi-bold);
+
+    transition: color 0.4s;
+    transition: 0.2s;
+}
+.nav__theme {
+    color: white;
+}
+.nav__logo:hover {
+    font-size: 110%;
+}
+.nav__menu {
+    visibility: hidden;
+    
+
+}
+.nav__list {
+    
+    
+    @media (min-width: 768px){
+        visibility: visible;
+        list-style-type: none;
+        display: flex;
+        align-items:center;
+        column-gap: 1rem;
+
+        position: relative;
+        
+    }
+
+}
+.nav__item {
+    color: var(--white-color);
+}
+.nav__link {
+    color: whitesmoke;
+    transition: 0.2s;
+}
+.nav__link:hover {
+    font-size: 120%;
+}
+
+.nav__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding-right: 1rem;
+}
+
+.nav__toggle {
+    color: white;
+    cursor: pointer;
+    transition: visibility 0.0s;
+    @media (min-width: 760px) {
+        visibility: hidden;
+    }
+}
+.nav__toggle:hover {
+    font-size: 115%;
+    color:rgba(15, 219, 255, 0.466)
+    /* text-shadow: 1, 1, 1, 2 rgba(red, green, blue, alpha); */
+}

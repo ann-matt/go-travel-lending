@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('modalOne.css');
+@import url('header.css');
+@import url('home.css');
+@import url('dest.css');
+@import url('testimonial.css');
+@import url('gallery.css');
+@import url('join.css');
+
+:root {
+  --header-height: 3.5rem;
+
+  --title-color: hsl(220, 8%, 10%);
+  --text-color: hsl(220, 8%, 40%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(220, 8%, 6%);
+  --body-color: hsl(220, 8%, 99%);
+  --container-color: hsl(220, 8%, 96%);
+  --opacity-color-30: hsla(0, 0%, 90%, .3);
+  --opacity-color-20: hsla(0, 0%, 90%, .2);
+
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body {
+    background-color: var(--body-color);
+
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    
+    padding-inline: 1rem;
+}
+a {
+text-decoration: none;
+}
+img {
+  max-width: 100%; 
+}
+
+
+

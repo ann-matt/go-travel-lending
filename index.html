@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style> 
+
+    <title>Go Travel</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="container nav">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+                <span>GoTravel</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#destination" class="nav__link">Направления</a></li>
+                    <li class="nav__item"><a href="#testimonial" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+
+                
+            </div>
+            <div class="nav__buttons theme">
+                <i class="fa-solid fa-bars nav__toggle"></i>
+
+                <i class="fa-solid fa-moon nav__theme" id="theme-button"></i>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home section" id="home">
+            <img src="./assets/img/home-bg.png" alt="home-bg-photo" class="home__bg">
+            <div class="home__blur"></div>
+
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title section__title">Путешествуй <br>Вокруг<br>Света</h1>
+
+            <p class="home__description">Посети лучшие туристические места и испытай невероятные эмоции от новых приключений!</p>
+
+            <a href="#destination" class="button home__button">Выбрать страну
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+            </div>
+            <div class="home__swiper swiper">
+                <div class="swiper-wrapper">
+                    <!-- <article class="home__article swiper-slide">
+                        <img src="/assets/img/home-img-1.png" alt="home-pic" class="home__img ">
+                    </article> -->
+
+                    <article class="home__article swiper-slide">
+                        <img src="/assets/img/home-img-2.png" alt="home-pic" class="home__img swiper-slide">
+                    </article>
+
+                    <article class="home__article swiper-slide">
+                        <img src="/assets/img/home-img-3.png" alt="home-pic" class="home__img swiper-slide">
+                    </article>
+
+                    <article class="home__article swiper-slide">
+                        <img src="/assets/img/home-img-4.png" alt="home-pic" class="home__img swiper-slide">
+                    </article>
+
+                    
+                </div>
+
+                    <div class="swiper-button-prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+            </div>
+        </div>
+        </section>
+
+
+        <section class="destination section" id="destination">
+            <div class="destination__container">
+                <div class="destination__data">
+                <h2 class="section__title">Выбери Лучшее <br>Направление</h2>
+                </div>
+
+                <div class="destination__cards">
+                    <article class="destination__card">
+
+                        <img src="./assets/img/destination-img-1.png" alt="destination_pic" class="destination__img">
+
+                        <div class="destination__info">
+                            <h3 class="destination__subtitle">Остров</h3>
+                            <h2 class="destination__title">БАЛИ</h2>
+                            <p class="destination__country">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Индонезия
+                                <span></span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="destination__card">
+                        
+                        <img src="./assets/img/destination-img-3.png" alt="destination_pic" class="destination__img">
+
+                        <div class="destination__info">
+                            <h3 class="destination__subtitle">Остров</h3>
+                            <h2 class="destination__title">Снторини</h2>
+                            <p class="destination__country">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Греция
+                                <span></span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="destination__card">
+                        
+                        <img src="./assets/img/destination-img-2.png" alt="destination_pic" class="destination__img">
+
+                        <div class="destination__info">
+                            <h3 class="destination__subtitle">Пляж</h3>
+                            <h2 class="destination__title">Банана</h2>
+                            <p class="destination__country">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Тайланд
+                                <span></span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            
+            
+        </section>
+
+
+        <section class="testimonial section" id="testimonial">
+            <h2 class="test__title">Что Думают <br> Наши Клиенты?</h2>
+
+            <div class="testimonial__container">
+                <img src="./assets/img/testimonial-img.png" alt="testimonial_pic" class="testimonial__img">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Гора Фуджи</h2>
+                            <p class="testimonial__text">Мне понравилась поездка на Фуджи, пейзажи на гору и с горы невероятные. Местные жители очень дружелюбные.</p>
+
+                            <div class="testimonial__profile">
+                                <img src="./assets/img/testimonial-profile-1.png" alt="testimonial_profile">
+                                <div class="testimonial__info">
+                                    <h3>Джон</h3>
+                                    <p>Фотограф</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Гора Фуджи</h2>
+                            <p class="testimonial__text">Мне понравилась поездка на Фуджи, пейзажи на гору и с горы невероятные. Местные жители очень дружелюбные.</p>
+
+                            <div class="testimonial__profile">
+                                <img src="./assets/img/testimonial-profile-2.png" alt="testimonial_profile">
+                                <div class="testimonial__info">
+                                    <h3>Джон</h3>
+                                    <p>Фотограф</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <h2 class="testimonial__title">Гора Фуджи</h2>
+                            <p class="testimonial__text">Мне понравилась поездка на Фуджи, пейзажи на гору и с горы невероятные. Местные жители очень дружелюбные.</p>
+
+                            <div class="testimonial__profile">
+                                <img src="./assets/img/testimonial-profile-3.png" alt="testimonial_profile">
+                                <div class="testimonial__info">
+                                    <h3>Джон</h3>
+                                    <p>Фотограф</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="gallery section" id="gallery">
+            <h2 class="gal__title">Галерея</h2>
+
+            <div class="gallery__container container">
+                <article class="gallery__card">
+                    <img src="./assets/img/gallery-img-1.png" alt="photo1" class="gallery__img">
+                    
+
+                    <div class="gallery__data">
+                        <h3 class="gallery__subtitle">Нуса</h3>
+                        <h2 class="gallery__title">Индонезия</h2>
+                    </div>
+                </article>
+
+                <article class="gallery__card">
+                    <img src="./assets/img/gallery-img-2.png" alt="photo1" class="gallery__img">
+                    
+
+                    <div class="gallery__data">
+                        <h3 class="gallery__subtitle">Кук</h3>
+                        <h2 class="gallery__title">Новая Зеландия</h2>
+                    </div>
+                </article>
+
+                <article class="gallery__card">
+                    <img src="./assets/img/gallery-img-3.png" alt="photo1" class="gallery__img">
+                    
+
+                    <div class="gallery__data">
+                        <h3 class="gallery__subtitle">Бора Бора</h3>
+                        <h2 class="gallery__title">Полинезия</h2>
+                    </div>
+                </article>
+
+                <article class="gallery__card">
+                    <img src="./assets/img/gallery-img-4.png" alt="photo1" class="gallery__img">
+                    
+
+                    <div class="gallery__data">
+                        <h3 class="gallery__subtitle">Санторини</h3>
+                        <h2 class="gallery__title">Греция</h2>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="join section" id="join">
+            <h2 class="join__title"> Твоё Путешествие <br> Начианется Здесь</h2>
+            <div class="join__container container">
+                <div class="join__data">
+                    
+                    <p class="join__description">
+                        Будь в курсе самых выгодных предложений!
+                    </p>
+
+                    <form action="" class="join__form">
+                        <input type="email" placeholder="Введите свою почту" class="join__input">
+                        <button type="submit" class="join__button">Покдлючить рассылку <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <img src="./assets/img/join-img.png" alt="img" class="join__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <div class="modal modal-one">
+        <div class="modal-one__container">
+            <ul class="modal-one__list">
+                <li class="modal-one__item"><a href="#home" class="modal-one__link">Главная</a></li>
+                <li class="modal-one__item"><a href="#destination" class="modal-one__link">Направления</a></li>
+                <li class="modal-one__item"><a href="#testimonial" class="modal-one__link">Отзывы</a></li>
+                <li class="modal-one__item"><a href="#gallery" class="modal-one__link">Галерея</a></li>
+                <li class="modal-one__item"><a href="#contact" class="modal-one__link">Контакты</a></li>
+            </ul>
+
+            <div class="modal-one__close" id="modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/94af884040.js" crossorigin="anonymous"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+</body>
+</html>
